@@ -1,0 +1,8 @@
+CREATE TABLE Assist(
+	N_E_ID		INT		NOT NULL,
+    N_ID		INT		NOT NULL,
+    SP_E_ID		INT		NOT NULL,
+    SP_ID		INT		NOT NULL,
+    FOREIGN KEY (N_E_ID, N_ID) REFERENCES Nurses(E_ID, N_ID),
+    FOREIGN KEY (SP_E_ID, SP_ID) REFERENCES Service_Provider(E_ID, SP_ID));
+    

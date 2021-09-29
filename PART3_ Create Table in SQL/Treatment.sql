@@ -1,0 +1,4 @@
+CREATE TABLE Treatment(
+    ICD_10_PCS		VARCHAR(20) 	NOT NULL,
+    Treatment_Name	VARCHAR(20),
+	PRIMARY KEY (ICD_10_PCS));

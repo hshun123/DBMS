@@ -1,0 +1,5 @@
+CREATE TABLE Nurses (
+	E_ID		INT		NOT NULL,
+    N_ID		INT		NOT NULL,
+    PRIMARY KEY (E_ID, N_ID),
+    FOREIGN KEY (E_ID) REFERENCES Employee(E_ID));

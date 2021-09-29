@@ -1,0 +1,9 @@
+CREATE TABLE Diagnosis(
+	P_ID 			INT				NOT NULL,
+    ICD_10_CM_Code	VARCHAR(20)		NOT NULL,
+    Dname			VARCHAR(20),
+    SP_ID			INT,
+    SP_E_ID			INT,
+    FOREIGN KEY (P_ID) REFERENCES Patient(P_ID),
+    PRIMARY KEY (P_ID, ICD_10_CM_Code),
+    FOREIGN KEY (SP_E_ID, SP_ID) REFERENCES Service_Provider(E_ID, SP_ID));
